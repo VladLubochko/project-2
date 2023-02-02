@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.container_panel {
+    display: flex;
+}
+
+.container_options{
+    display: flex;
+    width: 100%;
+}
+
+.container_options .options{
+    width: 6.25%;
+    border: 1px solid darkgray;
+    background-color: lightgreen;
+}
+
+.container_options .options a.link_options{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding: 5px;
+    /*border: 3px solid darkgray;*/
+}
+
+.container_options .options a.link_options:hover{
+    color: yellow;
+    background-color: blue;
+}
+
+.container_panel .left_container,
+.container_panel .right_container{
+    width: 50%;
+}
+
+.left_container .dir,
+.left_container .file,
+.left_container .path{
+
+}
+
+.left_container{
+    background-color: #ededed;
+    border: 3px solid #ededed;
+}
+
+.right_container{
+    background-color: azure;
+    border: 3px solid azure;
+}
+
+.left_container:hover,
+.right_container:hover{
+    border: 3px solid darkgray;
+}
+
+
+.right_container .right_container_message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.left_container .path{
+    text-align: center;
+    font-weight: bold;
+    background-color: burlywood;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left_container .dir a.link_dir{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    height: 100%;
+    padding: 5px;
+    border-top: 1px solid lightgrey;
+
+}
+
+.left_container .dir a.link_dir:hover{
+    color: yellow;
+    background-color: blue;
+}
+
+.left_container .file a.link_file{
+    color: green;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    height: 100%;
+    padding: 5px;
+    border-top: 1px solid lightgrey;
+}
+
+.left_container .file a.link_file:hover{
+    color: white;
+    background-color: green;
+}
+
+.form,
+.form legend,
+.form input,
+.form button {
+    padding: 10px 10px;
+}
+
+.form input.input_path{
+    width: 60%;
+}
+
+.form input.input_newdir,
+.form input.input_newfile,
+.form input.input_delfile,
+.form input.input_deldir{
+    width: 20%;
+}
+
+.form input.input_old_name_file,
+.form input.input_new_name_file{
+    width: 12%;
+}
+
+.form fieldset{
+    padding: 0 10px 0 10px;
+
+}
+
+.form_field{
+    padding: 0 10px 10px 10px;
+}
+
+footer p{
+    padding: 10px;
+    text-align: center;
+}
